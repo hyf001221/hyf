@@ -1,0 +1,6 @@
+今天我们学习了Vue
+学习了如何使用Vue node和NPM
+演示了node和NPM的使用方式
+
+
+今日目标：熟练掌握VUE node 和 NPM
