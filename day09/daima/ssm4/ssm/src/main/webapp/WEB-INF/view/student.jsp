@@ -61,34 +61,33 @@
 						<table
 							style="border-collapse: separate; border-spacing: 0px 10px;">
 							<tr>
-								<td>姓名：</td>
+								<td>分校名称：</td>
 								<td><input type="text" id="sname" name="sname"
 									class="form-control" aria-required="true" required /></td>
 								<td>&nbsp;&nbsp;</td>
 								</tr>
 								<tr>
-								<td>年龄：</td>
+								<td>联系方式：</td>
 								<td><input type="text" id="sex" name="sex"
 									class="form-control" aria-required="true" required /></td>
 								<td>&nbsp;&nbsp;</td>
 									</tr>
 									<tr>
-									<td>所在年级：</td>
+									<td>状态：</td>
 									<td>
-									<input type="checkbox" name="hobby" value="一年级">一年级
-									<input type="checkbox" name="hobby" value="二年级">二年级
-									<input type="checkbox" name="hobby" value="三年级">三年级
+									<input type="checkbox" name="hobby" value="开学">开学
+									<input type="checkbox" name="hobby" value="放假">放假
 									</td>
 									<td>&nbsp;&nbsp;</td>
 									</tr>
 									
-									<td>日期：</td>
+									<td>详细地址：</td>
 								<td><input type="date" id="birthday" name="birthday"
 									class="form-control" aria-required="true" required /></td>
 									<td>&nbsp;&nbsp;</td>
 							</tr>
 							<tr>
-								<td>部门：</td>
+								<td>城市：</td>
 								<td colspan="4"><select class="form-control" name="maid"
 									id="maid" aria-required="true" required>
 										<option value="">---请选择---</option>
@@ -361,30 +360,30 @@
 						checkbox : true
 					}, {
 						field : 'sid',
-						title : '学生编号',
+						title : '编号',
 						sortable : true
 					}, {
 						field : 'sname',
-						title : '用户名',
+						title : '分校名称',
 						sortable : true
 					}, {
 						field : 'sex',
-						title : '年龄',
+						title : '联系方式',
 						sortable : true
 					}, {
 						field : 'hobby',
-						title : '年级',
+						title : '状态',
 						sortable : true
 					}, {
 						field : 'birthday',
-						title : '入校时间',
+						title : '创建时间',
 						sortable : true,
 						formatter : function(value, row, index) {
 							return new Date(value).Format('yyyy-MM-dd');
 						}
 					}, {
 						field : 'maid',
-						title : '所选课程',
+						title : '城市',
 						sortable : true,
 						formatter : function(value, row, index) {
 							return row.major.maname;

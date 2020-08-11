@@ -162,7 +162,7 @@ public void studentList(Student student,HttpServletRequest request,HttpServletRe
 		HSSFWorkbook wb = new HSSFWorkbook();
 		HSSFSheet sheet = wb.createSheet();
 		HSSFRow row0 = sheet.createRow(0);
-		String[] title={"学生编号","学生姓名","年龄","所在年级","入学时间","所在专业"};
+		String[] title={"编号","名称","联系方式","状态","创建时间","所在城市"};
 		for (int i = 0; i < title.length; i++) {
 			row0.createCell(i).setCellValue(title[i]);
 		}
